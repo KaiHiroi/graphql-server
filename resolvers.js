@@ -9,6 +9,9 @@ const resolvers = {
   proposal: async ({ id }, context) => {
     return Proposals.find((proposal) => proposal.id == id);
   },
+  // solutions: async (_) => {
+  //   return;
+  // },
 };
 
 module.exports = resolvers;
